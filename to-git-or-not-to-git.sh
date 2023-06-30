@@ -1,0 +1,1 @@
+curl -s https://01.alem.school/api/graphql-engine/v1/graphql --data '{"query":"{user(where:{login:{_eq:\"Ashton\"}}){id}}"}' | cut -d: -f4 | cut -c 1-4
